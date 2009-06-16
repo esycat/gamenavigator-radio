@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: Palatyno Linotype, Sylfaen, Georgia, serif;
+	line-height: 1.4;
+}
+
+
+/**
+ * Link decoration
+ */
+a:link { color: #6633cc; }
+a:visited { color: #5533b8; }
+a[href]:hover { color: #cc3300; }
+a[href]:active { color: #ee0000; }
+
+h1 a, h2 a { text-decoration: none !important; }
+
+
+/**
+ * Headings
+ */
+h1, h2, h3 {
+	font-family: Candara, Trebuchet MS, Verdana, sans-serif;
+}
+
+h1, h2 {
+	text-shadow: 0 0 2px #999;
+}
+
+p {
+	margin-top: .8em;
+	margin-bottom: .2em;
+}
+
+sup, sub {
+	font-size: 0.7em;
+}
+
+hr {
+	height: 1px;
+	border-color: #333;
+	border-width: 1px 0;
+	margin: auto 1em;
+	background-color: #0a0a0a;
+}
+
+
+/**
+ * Header
+ */
+#header h1 {
+	color: white;
+	font-size: 280%;
+	text-transform: lowercase;
+}
+
+#header .radio {
+	display: none;
+	color: SlateBlue;
+	font-weight: normal;
+}
+
+#header .navigator {
+	display: none;
+	color: #c00;
+}
+
+
+/**
+ * Content
+ */
+#content {}
+
+
+/**
+ * Sidebar
+ */
+#sidebar, #footer {
+	font-family: Cardana, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+}
+
+#sidebar h3 {
+	color: black;
+	font-size: 100%;
+	text-transform: uppercase;
+	line-height: 30px;
+	white-space: nowrap;
+}
+
+#sidebar p {
+	margin: .5em 1em;
+}
+
+#sidebar a {
+	color: #111;
+}
+
+#sidebar .widget#tag-cloud {
+	text-align: justify;
+}
+
+#sidebar .widget#comments ul li {
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+
+/**
+ * Footer
+ */
+#footer {
+	color: #325d90;
+	font-family: Cardana, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+}
+
+#footer a {
+	color: #325d90 !important;
+}

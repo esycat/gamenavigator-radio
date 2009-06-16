@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+#content ol, #content ul,
+#sidebar ol, #sidebar ul
+{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+#content ol li, #content ul li
+{
+	margin-left: 1.2em;
+}
+
+#sidebar ol li, #sidebar ul li
+{
+	margin-left: 1em;
+}
+
+
+#content ul.topics {
+	list-style: none;
+}
+
+#content ul.topics li {
+	margin-left: 2em;
+	text-indent: -1.25em;
+}
+
+#content ul.topics li:before {
+	content: '—';
+	margin-right: .25em;
+}
+
+#sidebar ul li {
+	list-style: none;
+}

@@ -1,0 +1,201 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 755px;
+	background-color: black;
+}
+
+
+/* Header */
+#header {
+	height: 85px;
+	border-bottom: 1px solid white;
+}
+
+#header h1 {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 350px;
+	height: 105px;
+	background: url('../images/aracast.png') center no-repeat;
+}
+
+/* Navigation */
+#navigation {
+	position: relative;
+	height: 40px;
+	background-color: Gray;
+	background-image: url('../images/navigation-bg.png');
+	background-position: top;
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2c2c2c), to(#1c1c1c));
+	/*opacity: 0.95;*/
+	font-family: Trebuchet MS, Cardana, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#navigation ol {
+	overflow: hidden;
+	padding: 0 10px;
+	color: #aaaaaa;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	list-style: none;
+	line-height: 40px;
+	letter-spacing: .15em;
+}
+
+#navigation ol li {
+	float: left;
+}
+
+#navigation a {
+	display: block;
+	height: 40px;
+	padding: 0 1em;
+	color: #aaaaaa !important;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#navigation a:hover {
+	background-color: DarkSlateGray;
+	background-image: url('../images/navigation-bg.png');
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#111));
+	color: white !important;
+}
+
+
+/* Search box in the navigation */
+#search {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	min-width: 280px;
+	height: 38px;
+	border-radius: 5px 0 0 5x;
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	margin: 1px 0;
+	background-color: Gainsboro;
+	background-image: url('../images/searchbox-bg.png');
+	background-position: center;
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e6e6e6), color-stop(0.5, #f5f5f5), color-stop(0.5, Gainsboro));
+}
+
+#search input {
+	display: block;
+	width: 70%;
+	height: 14px;
+	border: 1px solid DarkGray;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	margin: 11px auto;
+	padding: 2px 10px;
+	background-color: #f0f0f0;
+	background-image: url('../images/searchquery-bg.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #999999;
+	line-height: 14px;
+}
+
+
+/* Outer content and sidebar wrapper */
+#wrapper {
+	clear: both;
+	overflow: hidden;
+	padding: 1px 0;
+	background-color: white;
+}
+
+
+/* Inner content wrapper */
+#wrapper-content {
+	width: 70%;
+}
+
+
+/* Content */
+#content {
+	padding: 20px;
+}
+
+#content .entry {
+	margin-bottom: 1.5em;
+}
+
+#content .entry .metadata {
+	border-top: 3px solid #eae6dd;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin: 1em 2em 0 2em;
+	padding: 3px 1em 4px 1em;
+	background-color: #eee;
+	font-family: Cardana, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+}
+
+
+/* Sidebar */
+#sidebar {
+	float: right;
+	width: 30%;
+	min-width: 280px;
+	border-bottom: 5px solid #eae6dd;
+	border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	padding-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#sidebar .widget {
+	margin-bottom: 1em;
+}
+
+#sidebar .widget .container {
+	padding: .4em .8em;
+}
+
+#sidebar h3 {
+	height: 30px;
+	border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	-webkit-border-top-left-radius: 5px;
+	padding: 0 1.2em;
+	background-color: silver;
+	background-image: url('../images/sidebar-header-bg.png');
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(Silver), to(DarkGray));
+}
+
+#sidebar .idw-container { padding: 0 !important; }
+#sidebar .idw-container .idw-footer { display: none !important; }
+
+#sidebar #subscription ul { overflow: hidden; }
+#sidebar #subscription li { float: left; }
+
+
+/* Footer */
+#footer {
+	clear: both;
+	height: 40px;
+	border-top: 1px solid black;
+	padding: 1em 25% 1em 1em;
+	background-color: #222;
+}

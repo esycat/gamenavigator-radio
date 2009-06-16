@@ -1,0 +1,20 @@
+/*
+Theme Name: Noir Silver
+Theme URI: http://podcast.gamenavigator.com/
+Description: Theme specially designed for Radio Navigator. Based on default WordPress theme.
+Version: 0.1
+Author: Eugene Janusov
+Author URI: http://annah.ru/
+Tags: dark, black, gray, flex width, two columns, widgets
+
+	The XHTML, CSS and design is released under terms
+	of GNU General Public License version 3 (GPLv3):
+	http://opensource.org/licenses/gpl-3.0.html
+
+*/
+
+@import url('styles/layout.css');
+@import url('styles/forms.css');
+@import url('styles/text.css');
+@import url('styles/images.css');
+@import url('styles/lists.css');
